@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: openuserinfo
+  namespace: openplatform
+spec:
+  containers:
+    - name: hellouserinfo
+      image: "karldoenitz/hellouserinfo:1.0"
+      ports:
+        - containerPort: 50052
+          hostPort: 50052
+      env:
+        - name: etcdiport
+          valueFrom:
+            configMapKeyRef:
+              name: openplatform
+              key: etcd-iport
+      imagePullPolicy: IfNotPresent

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opengateway
+  namespace: openplatform
+  labels:
+    app: opengateway
+spec:
+  containers:
+    - name: opengateway
+      image: "karldoenitz/opengateway:1.0"
+      ports:
+        - containerPort: 8000
+          hostPort: 8000
+      env:
+        - name: etcdiport
+          valueFrom:
+            configMapKeyRef:
+              name: openplatform
+              key: etcd-iport
+      imagePullPolicy: IfNotPresent

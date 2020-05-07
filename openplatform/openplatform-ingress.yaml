@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: openplatform-web-gateway
+  namespace: openplatform
+spec:
+  rules:
+    - host: open.platform.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: webgateway
+              servicePort: 8000
