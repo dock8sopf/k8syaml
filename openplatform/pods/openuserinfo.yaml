@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: hellouserinfo
-      image: "karldoenitz/hellouserinfo:1.0"
+      image: "karldoenitz/hellouserinfo:1.1"
       ports:
         - containerPort: 50052
           hostPort: 50052
