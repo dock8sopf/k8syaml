@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opencalculator
+  namespace: openplatform
+spec:
+  containers:
+    - name: grpcalculator
+      image: "karldoenitz/grpcalculator:latest"
+      ports:
+        - containerPort: 50052
+          hostPort: 50052
+      env:
+        - name: etcdiport
+          valueFrom:
+            configMapKeyRef:
+              name: openplatform
+              key: etcd-iport
+      imagePullPolicy: IfNotPresent
