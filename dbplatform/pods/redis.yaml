@@ -9,6 +9,7 @@ spec:
   containers:
     - name: redis
       image: "redis:latest"
+      command: redis-server --requirepass 1
       ports:
         - containerPort: 6379
           hostPort: 16279
