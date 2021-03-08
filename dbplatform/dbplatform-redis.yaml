@@ -9,4 +9,4 @@ spec:
     - port: 16379
       targetPort: 6379
   selector:
-    app: etcd
+    app: redis
