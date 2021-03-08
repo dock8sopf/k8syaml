@@ -10,10 +10,10 @@ spec:
     - name: redis
       image: "redis:latest"
       command:
-      - redis-server
-      args：
-      - --requirepass
-      - 1
+      - "redis-server"
+      args:
+      - "--requirepass"
+      - "1"
       ports:
         - containerPort: 6379
           hostPort: 16279
