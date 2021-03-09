@@ -10,9 +10,8 @@ spec:
     - name: mysql
       image: "mysql:latest"
       env:
-        env:
-          - name: MYSQL_ROOT_PASSWORD
-            value: "m2"
+        - name: MYSQL_ROOT_PASSWORD
+          value: "m2"
       ports:
         - containerPort: 3306
           hostPort: 13306
