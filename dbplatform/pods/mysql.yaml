@@ -9,9 +9,11 @@ spec:
   containers:
     - name: mysql
       image: "mysql:latest"
-      args:
-        - "-e"
-        - "MYSQL_ROOT_PASSWORD=2"
+      env:
+        - name: MYSQL_USER
+          value: root
+        - name: MYSQL_PASSWORD
+          value: m2
       ports:
         - containerPort: 3306
           hostPort: 13306
