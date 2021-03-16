@@ -11,4 +11,8 @@ kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/open
 kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/openplatform/pods/grpcalculator.yaml
 kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/openplatform/pods/opengateway.yaml
 kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/openplatform/pods/openuserinfo.yaml
-
+kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/dbplatform/dbplatform.yaml
+kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/dbplatform/dbplatform-redis.yaml
+kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/dbplatform/dbplatform-mysql.yaml
+kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/dbplatform/pods/mysql.yaml
+kubectl apply -f https://raw.githubusercontent.com/dock8sopf/k8syaml/master/dbplatform/pods/redis.yaml
