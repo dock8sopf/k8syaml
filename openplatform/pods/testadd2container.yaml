@@ -18,7 +18,7 @@ spec:
               key: etcd-iport
       imagePullPolicy: IfNotPresent
     - name: ubuntu
-      image: "ubuntu:latest"
+      image: "ubuntu:devel"
       ports:
         - containerPort: 50053
           hostPort: 50053
