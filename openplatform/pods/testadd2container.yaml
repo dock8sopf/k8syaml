@@ -7,4 +7,5 @@ spec:
   containers:
     - name: centos
       image: "centos:7"
+      command: ["/bin/bash"]
       imagePullPolicy: IfNotPresent
