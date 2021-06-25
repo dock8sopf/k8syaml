@@ -31,4 +31,3 @@ spec:
               name: openplatform
               key: etcd-iport
       imagePullPolicy: IfNotPresent
-0 comments on commit c8c9265
