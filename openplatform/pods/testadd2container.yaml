@@ -8,6 +8,3 @@ spec:
     - name: centos
       image: "centos:7"
       imagePullPolicy: IfNotPresent
-    - name: ubuntu
-      image: "ubuntu:devel"
-      imagePullPolicy: IfNotPresent
