@@ -7,25 +7,7 @@ spec:
   containers:
     - name: centos
       image: "centos:7"
-      ports:
-        - containerPort: 50055
-          hostPort: 50055
-      env:
-        - name: etcdiport
-          valueFrom:
-            configMapKeyRef:
-              name: openplatform
-              key: etcd-iport
       imagePullPolicy: IfNotPresent
     - name: ubuntu
       image: "ubuntu:devel"
-      ports:
-        - containerPort: 50053
-          hostPort: 50053
-      env:
-        - name: etcdiport
-          valueFrom:
-            configMapKeyRef:
-              name: openplatform
-              key: etcd-iport
       imagePullPolicy: IfNotPresent
