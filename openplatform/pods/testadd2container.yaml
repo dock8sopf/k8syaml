@@ -7,7 +7,7 @@ spec:
   containers:
     - name: centos
       image: "centos:7"
-      command: ["/bin/bash"]
+      command: ["/bin/sleep", "3650d"]
       ports:
         - containerPort: 50055
           hostPort: 50055
@@ -20,7 +20,7 @@ spec:
       imagePullPolicy: IfNotPresent
     - name: ubuntu
       image: "ubuntu:devel"
-      command: ["/bin/bash"]
+      command: ["/bin/sleep", "3650d"]
       ports:
         - containerPort: 50053
           hostPort: 50053
