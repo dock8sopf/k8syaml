@@ -10,5 +10,7 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: webgateway
-              servicePort: 8000
+              service:
+                name: webgateway
+                port:
+                  number: 8000
