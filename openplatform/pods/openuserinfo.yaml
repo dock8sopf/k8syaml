@@ -6,11 +6,13 @@ metadata:
 spec:
   containers:
     - name: hellouserinfo
-      image: "karldoenitz/hellouserinfo:1.3"
+      image: "karldoenitz/hellouserinfo:1.4"
       ports:
-        - containerPort: 50052
-          hostPort: 50052
+        - containerPort: 50021
+          hostPort: 50021
       env:
+        - name: runport
+          value: 50021
         - name: etcdiport
           valueFrom:
             configMapKeyRef:
