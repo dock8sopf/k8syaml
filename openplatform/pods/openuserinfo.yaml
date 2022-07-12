@@ -12,7 +12,7 @@ spec:
           hostPort: 50021
       env:
         - name: runport
-          value: 50021
+          value: "50021"
         - name: etcdiport
           valueFrom:
             configMapKeyRef:
