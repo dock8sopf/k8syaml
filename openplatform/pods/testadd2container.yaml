@@ -23,7 +23,7 @@ spec:
       command: ["/bin/sleep", "3650d"]
       ports:
         - containerPort: 50053
-          hostPort: 50053
+          hostPort: 50055
       env:
         - name: etcdiport
           valueFrom:
