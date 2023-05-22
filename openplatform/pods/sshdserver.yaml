@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: centos
-      image: "testcontainers/sshd:latest"
+      image: "circleci/sshd:0.1"
       command: ["/bin/sleep", "3650d"]
       ports:
         - containerPort: 22
