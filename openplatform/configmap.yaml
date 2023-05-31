@@ -4,4 +4,4 @@ metadata:
   name: openplatform
   namespace: openplatform
 data:
-  etcd-iport: 'storageservice.storageplatform.svc.cluster.local:12379'
+  etcd-iport: 'storageservice.storageplatform:12379'
