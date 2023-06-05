@@ -58,7 +58,7 @@ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/cen
 sudo yum makecache fast
 sudo yum -y install docker-ce docker-ce-selinux
 # Step 4: 开启Docker服务
-sudo systemctl enable docker && systemctl start docker
+sudo systemctl enable docker && sudo systemctl start docker
 ```
 
 ### 校验docker安装
